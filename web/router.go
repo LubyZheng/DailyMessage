@@ -102,7 +102,7 @@ func startTask(ctx *gin.Context) {
 		log.Println(err.Error())
 		return
 	}
-	go SetTasks(task) //开启协程任务，默认能成功
+	SetTasks(task)
 	response(ctx, true)
 }
 
@@ -134,6 +134,7 @@ func deleteTask(ctx *gin.Context) {
 		log.Println(err.Error())
 		return
 	}
+	RemoveTask(task)
 	response(ctx, true)
 }
 
