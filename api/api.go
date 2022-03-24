@@ -14,7 +14,7 @@ import (
 const (
 	WEATHER_URL = "https://tianqi.moji.com/weather"
 	COVID_URL   = "https://lab.isaaclin.cn/nCoV/api/area?latest=1&provinceEng="
-	NEWS_URL    = "http://v.juhe.cn/toutiao/index?type=guoji&key=d268884b9b07c0eb9d6093dc54116018"
+	NEWS_URL    = "http://v.juhe.cn/toutiao/index?type=guonei&key=d268884b9b07c0eb9d6093dc54116018"
 )
 
 func GetWeather(country, province, city string) (Weather, error) {

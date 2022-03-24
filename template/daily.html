@@ -12,29 +12,11 @@
     <div style="margin-top: 10px;line-height: 1;">{{message.Content}}</div>
     <br>
     <hr>
-    <!--    <h3 style="text-align: center">{{weather.City}}</h3>-->
-    <div style="text-align: center;font-size: 18px;"><img width="15%" src="{{weather.ImgURL}}"> {{weather.Weather}}
-    </div>
-    <br>
-    <div style="padding: 0;width: 100%;">
-        <div><span style="color: #6e6e6e">温度：</span>{{weather.Temp}}</div>
-        <div><span style="color: #6e6e6e">湿度：</span>{{weather.Humidity}}</div>
-        <div><span style="color: #6e6e6e">风向：</span>{{weather.Wind}}</div>
-        <div><span style="color: #6e6e6e">空气：</span>{{weather.Air}}</div>
-        <div><span style="color: #6e6e6e">提示：</span>{{weather.Note}}</div>
-    </div>
-    <br>
+        {{weather.Content}}
     <hr>
 
     <div><h3 style="text-align: center;">Covid</h3></div>
-    <div>
-        <div><span style="color: #6e6e6e">数据更新时间：</span>{{covid.UpdateTime}}</div>
-        <div><span style="color: #6e6e6e">现存确诊人数：</span>{{covid.ExistingInfectedPopulation}}</div>
-        <div><span style="color: #6e6e6e">累计确诊人数：</span>{{covid.TotalInfectedPopulation}}</div>
-        <div><span style="color: #6e6e6e">疑似感染人数：</span>{{covid.SuspectedInfectedPopulation}}</div>
-        <div><span style="color: #6e6e6e">治愈人数：</span>{{covid.CuredPopulation}}</div>
-        <div><span style="color: #6e6e6e">死亡人数：</span>{{covid.DeadPopulation}}</div>
-    </div>
+        {{covid.Content}}
     <br>
     <hr>
 
