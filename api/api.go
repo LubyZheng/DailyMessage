@@ -14,7 +14,7 @@ import (
 const (
 	WEATHER_URL = "https://tianqi.moji.com/weather"
 	COVID_URL   = "https://lab.isaaclin.cn/nCoV/api/area?latest=1&provinceEng="
-	NEWS_URL    = "http://v.juhe.cn/toutiao/index?type=guonei&key=d268884b9b07c0eb9d6093dc54116018"
+	NEWS_URL    = "https://api.jisuapi.com/news/get?channel=%E5%A4%B4%E6%9D%A1&start=0&num=10&appkey=45e488546e801c8d"
 )
 
 func GetWeather(country, province, city string) (Weather, error) {
@@ -102,7 +102,7 @@ func GetNews() ([]News, error) {
 	if err != nil {
 		return nil, fmt.Errorf("[News API error] error information:%s", err.Error())
 	}
-	if NewsJson.Success != "success!" {
+	if NewsJson.Success != "ok" {
 		//不成功的原因是当天接口的免费次数用完了，先用hard code代替，之后优化
 		return []News{
 			{"理解了这些，你就明白实现社会面动态清零要走几步？", "https://mini.eastday.com/mobile/220314143506041207595.html"},
@@ -116,7 +116,6 @@ func GetNews() ([]News, error) {
 			{"止损93万！他智扮演受害人“爸爸”四句话把骗子气“吐血”", "https://mini.eastday.com/mobile/220314143004281309717.html"},
 			{"沪上春苔「图」", "https://mini.eastday.com/mobile/220314142546410174214.html"},
 		}, nil
-		//return nil, fmt.Errorf("[News API error] error information:unknown error")
 	}
 	n := make([]News, 10)
 	for i := 0; i < 10; i++ {

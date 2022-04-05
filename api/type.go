@@ -1,17 +1,17 @@
 package api
 
 type NewsResponse struct {
-	Success string            `json:"reason"`
+	Success string            `json:"msg"`
 	Result  NewsResponseChild `json:"result"`
 }
 
 type NewsResponseChild struct {
-	Data []News `json:"data"`
+	Data []News `json:"list"`
 }
 
 type News struct {
 	Title string `json:"title"`
-	URL   string `json:"url"`
+	URL   string `json:"weburl"`
 }
 
 type Weather struct {
