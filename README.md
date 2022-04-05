@@ -12,7 +12,7 @@
 
 
 
-### 进程示意图，MAC用户使用根目录下的mac.exe, WIN用户用win.exe
+### 进程示意图
 
 ![](https://github.com/LubyZheng/DailyMessage/raw/master/pic/exe.png)
 
