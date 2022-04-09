@@ -19,7 +19,7 @@ Dear {{ReceiverName}},
 {{Content}} 
 <br>
 <br>
-Best,
+Best Regards,
 <br>
 <br>
 {{Signature}}

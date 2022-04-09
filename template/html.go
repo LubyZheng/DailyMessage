@@ -25,12 +25,12 @@ const HTML = `
         {{weather.Content}}
     <hr>
 
-    <div><h3 style="text-align: center;">Covid</h3></div>
+    <div><h3 style="text-align: center;">COVID</h3></div>
         {{covid.Content}}
     <br>
     <hr>
 
-    <div><h3 style="text-align: center;">News</h3></div>
+    <div><h3 style="text-align: center;">NEWS</h3></div>
     <div>
         {{news.Content}}
     </div>
@@ -40,6 +40,7 @@ const HTML = `
 <br><br>
 </body>
 </html>
+
 `
 
 func GenerateHTML(html string, info map[string]interface{}) string {
